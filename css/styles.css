@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --naranjaMenus: #d8900e;
+    --azulBase:#1956d2;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    /* height: 80px; */
+    /* introducir rutas relativas con / */
+    background: url(assets/header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* color por si no se muestra la imagen */
+    background-color: #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h2{
+    font-family:'Heebo', sans-serif;
+    color: white;
+    font-size: 25px;
+    padding: 20px;
+    position: relative;
+}
+
+header a img{
+    width: 40px;
+    height: 30px;
+    margin:5px;
+}
+
+header a:nth-child(3) img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+
+nav{
+    width: 100%;
+    height: 40vh;
+    /* height: 300px; */
+    background: url(assets/nav.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* color por si no se muestra la imagen */
+    background-color: #2345ff;
+
+    
+}
+
+.full_contact{
+    position: fixed;
+    width: 100%;
+    height:100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 102;
+    
+}
+
+
+.contact_form{
+    font-family:'Heebo', sans-serif;
+    background: url(/css/assets/main.png);
+    position: fixed;
+    margin-top: 20%;
+    margin-left: 30px;
+    width: 80%;
+    height: 75%;
+    background-color: white;
+    z-index: 103;
+    border-radius: 8px;
+    box-shadow: 7px 14px 40px -11px;
+}
+
+.form_style{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#l_name,#l_email,#l_um{
+    text-align: center;
+    color: white;
+    padding: 2px;
+    margin-top: 10px;
+}
+
+#name,#email{
+    width: 180px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+}
+
+#user_message{
+    font-family:'Heebo', sans-serif;
+    padding:10px;
+    border-radius: 8px;
+    border: none;
+}
+
+.portrait{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#david{
+    margin-top: 10px;
+    width: 150px;
+    transform: scale(1.2);
+    transform-origin: top left;
+    z-index: 1;
+
+}
+
+/* #bio{
+    transform: scaleX(0.5) scaleY(0.5);
+    margin-bottom: 20%;
+} */
+
+.portrait a{
+    height: 80px;
+    transform: scale(0.5);
+}
+
+#bio{
+    transform: scale(1.5%);
+}
+
+.panel1{
+    margin-top: 30px;
+    left: 50%;
+    transform: translateX(-50%) scaleX(1.5) scaleY(1.5);
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background: url(assets/panel1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    z-index: 2;
+    font-family:'Heebo', sans-serif;
+}
+
+.panel1 h2{
+    transform: rotate(-2deg);
+    font-size: 20px;
+    color: white;
+    margin-top:4%;
+}
+
+.contact_form .submit{
+    width: 200px;
+    height: 55px;
+    position: absolute;
+    margin-bottom: 30px;
+    margin-top: 380px;
+    background: url(assets/panel1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border:none;
+    /* font-family:'Heebo', sans-serif; */
+    color: #ffe600;
+    font-size: 20px;
+}
+
+.cerrar{
+    position: absolute;
+    top: -60px;
+    right:-60px;
+    transform: scale(0.5);
+    z-index: 103;
+}
+
+main{
+    width: 100%;
+    height: 800px;
+    background: url(assets/main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* color por si no se muestra la imagen */
+    background-color: #2235ff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 800px;
+}
+
+
+.m_contact{
+    width: 100%;
+    height: 150px;
+    background: url(assets/main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* color por si no se muestra la imagen */
+    background-color: #2235ff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.latest_works{
+    margin-top: 90px;
+}
+
+.panel2{
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 7px 14px 31px -11px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family:'Heebo', sans-serif;
+}
+
+.panel2 img{
+    padding: 5px;
+    width: 100%;
+    height: 80%;
+}
+
+.panel2 p{
+    height: 12%;
+    color: white;
+    background-color: var(--azulBase);
+    margin-top: 2px;
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    font-size: 12px;
+    font-family:'Heebo', sans-serif;
+    color: white;
+}
+
+.aboutme1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+
+#b_aboutme{
+    width: 300px;
+    height: 100px;
+    background: url(/css/assets/bton1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:2px;
+    transform: rotate(-4deg) scale(0.9);
+    border:none;
+    font-size: 30px;
+
+    color: white;
+}
+
+
+#name_back{
+    /* quitar la linea del link */
+}
+
+@media only screen and (min-width:580px){
+    .latest_works{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    main{
+        width: 100%;
+        height: 600px;
+    }
+
+    .contact_form{
+        position: absolute;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        max-width:290px;
+        max-height:430px;
+        /* position: absolute; */
+
+    }
+
+    .form_style{
+        position: absolute;
+        
+    }
+
+}
+
+@media only screen and (min-width:580px){
+    main{
+        width: 100%;
+        height: 80vh;
+    }
+}
+
+@media only screen and (min-width:870px){
+    .latest_works{
+        transform: scale(1.2);
+    }
+    
+    main{
+        width: 100%;
+        height: 44.7vh;
+    }
+
+    footer{
+        height: 50px;
+    }
+
+    .contact_form{
+        position: absolute;
+        margin-left: 85%;
+        transform: translateX(-50%);
+        max-width:290px;
+        max-height:430px;
+        /* position: absolute; */
+
+    }
+
+}
